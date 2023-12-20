@@ -1,0 +1,90 @@
+{
+  "masterData": [
+    {
+      "id": 1,
+      "name": "Marketplace",
+      "nik": 1231293712,
+      "gender": "Laki-Laki",
+      "nilai": 30
+    },
+    {
+      "id": 2,
+      "name": "Venus DB PRO",
+      "nik": 3123123134,
+      "gender": "Perempuan",
+      "nilai": 30
+    },
+    {
+      "id": 5,
+      "name": "Marketplace",
+      "nik": 3123123134,
+      "gender": "Laki-Laki",
+      "nilai": 30
+    },
+    {
+      "id": 6,
+      "name": "Marketplace",
+      "nik": 3123123134,
+      "gender": "Laki-Laki",
+      "nilai": 30
+    },
+    {
+      "id": 7,
+      "name": "Marketplace",
+      "nik": 3123123134,
+      "gender": "Laki-Laki",
+      "nilai": 30
+    },
+    {
+      "id": 8,
+      "name": "Venus DB PRO",
+      "nik": 3123123134,
+      "gender": "Perempuan",
+      "nilai": 30
+    },
+    {
+      "id": 10,
+      "name": "Venus 3D Asset",
+      "nik": 3123123134,
+      "gender": "Perempuan",
+      "nilai": 50
+    },
+    {
+      "id": 11,
+      "name": "Marketplace",
+      "nik": 3123123134,
+      "gender": "Laki-Laki",
+      "nilai": 50
+    },
+    {
+      "id": 12,
+      "name": "Marketplace",
+      "nik": 3123123134,
+      "gender": "Laki-Laki",
+      "nilai": 50
+    },
+    {
+      "id": 13,
+      "name": "Marketplace",
+      "nik": 3123123134,
+      "gender": "Laki-Laki",
+      "nilai": 50
+    },
+    {
+      "name": "rhazzid",
+      "nik": "1122",
+      "gender": "Laki-Laki",
+      "nilai": "90",
+      "id": 14
+    }
+  ],
+  "login": [
+    {
+      "id": 1,
+      "name": "rhazzid",
+      "email": "rhazzid@gmail.com",
+      "password": "12345",
+      "token": "21291@!@#!@NNSjasbajsdsndals"
+    }
+  ]
+}
