@@ -1,14 +1,5 @@
 import React from "react";
 
-// Admin Imports
-import MainDashboard from "views/admin/default";
-import NFTMarketplace from "views/admin/marketplace";
-import Profile from "views/admin/profile";
-import DataTables from "views/admin/tables";
-import RTLDefault from "views/rtl/default";
-import MasterData from "views/master-data";
-// ProjectDetail Imports
-
 // Auth Imports
 import SignIn from "views/auth/SignIn";
 
@@ -19,7 +10,7 @@ import {
   MdBarChart,
   MdPerson,
   MdLock,
-  MdAddChart
+  MdAddChart,
 } from "react-icons/md";
 
 const routes = [
@@ -32,16 +23,16 @@ const routes = [
       {
         name: "Practitioner",
         layout: "/master-data/practitioner",
-        path: "/master-data/practitioner",
-        pathParent: "master-data",
-      }, 
-      {
-        name: "location",
-        layout: "/location",
-        path: "location",
+        path: "master-data/practitioner",
         pathParent: "master-data",
       },
-    ]
+      {
+        name: "Location",
+        layout: "/master-data/location",
+        path: "master-data/location",
+        pathParent: "master-data",
+      },
+    ],
   },
   {
     name: "Main Dashboard",
@@ -83,6 +74,5 @@ const routes = [
   //   icon: <MdHome className="h-6 w-6" />,
   //   component: <RTLDefault />,
   // },
- 
 ];
 export default routes;

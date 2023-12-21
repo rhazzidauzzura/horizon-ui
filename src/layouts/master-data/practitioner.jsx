@@ -26,7 +26,7 @@ export default function Practitioner(props) {
     for (let i = 0; i < routes.length; i++) {
       if (
         window.location.href.indexOf(
-          routes[i].layout
+          routes[i].layout + "/" + routes[i].path
         ) !== -1
       ) {
         setCurrentRoute(routes[i].name);
@@ -45,17 +45,17 @@ export default function Practitioner(props) {
     }
     return activeNavbar;
   };
-  const getRoutes = (routes) => {
-    return routes.map((prop, key) => {
-      if (prop.layout === "/list") {
-        return (
-          <Route path={`/${prop.path}`} />
-        );
-      } else {
-        return null;
-      }
-    });
-  };
+  // const getRoutes = (routes) => {
+  //   return routes.map((prop, key) => {
+  //     if (prop.layout === "/list") {
+  //       return (
+  //         <Route path={`/${prop.path}`} />
+  //       );
+  //     } else {
+  //       return null;
+  //     }
+  //   });
+  // };
 
   document.documentElement.dir = "ltr";
   return (
@@ -87,7 +87,7 @@ export default function Practitioner(props) {
     //   </div>
     // </div>
     <>
-    <PractitionerView/>
+      <PractitionerView />
     </>
   );
 }

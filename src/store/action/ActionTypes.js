@@ -1,1 +1,3 @@
-export const FETCH_MASTER_DATA= "masterData/fetchSuccess";
+export const FETCH_PRACTITIONERS = "practitioners/fetchSuccess";
+
+export const FETCH_LOCATIONS = "locations/fetchSuccess";

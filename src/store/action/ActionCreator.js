@@ -1,16 +1,17 @@
 import Swal from "sweetalert2";
-import { FETCH_MASTER_DATA } from "./ActionTypes";
+import { FETCH_PRACTITIONERS } from "./ActionTypes";
 import axios from "axios";
 
 const api = axios.create({
-  baseURL: "http://localhost:3000",
+  // baseURL: "http://localhost:3000",
+  baseURL: "https://dev-hub.zicare.id/api",
 });
 
-let baseUrl = "http://localhost:3000";
+let url = "http://localhost:3000";
 
 // let baseUrl = "https://dev-hub.zicare.id/api/practitioner/list/A2021/10"
 
-export const masterDataFetch = (query, pageIndex) => {
+export const practitionersFetch = (query, pageIndex) => {
   return async (dispatch, getState) => {
     //  fetch(`${baseUrl}/masterData`, {
     //   method: "GET"
@@ -36,54 +37,51 @@ export const masterDataFetch = (query, pageIndex) => {
     //     console.log(err);
     //   });
 
-      try {
-        const res = await api.get('/masterData')
-        // toast('success', `Success Deleted Data Patient`)
-        dispatch(masterFetchSuccess(res))
-      } catch (error) {
-        // toast('error', error.message)
-        console.log(error);
-      }
+    try {
+      const res = await api.get("/practitioner/list/A2021/10", {
+        // headers: {
+        //   Token: localStorage.Token,
+        // },
+        auth: {
+          username: "sysdev",
+          password: "sysdev",
+        },
+      });
+      // toast('success', `Success Deleted Data Patient`)
+      dispatch(practitionerFetchSuccess(res.data));
+
+      console.log("RESPONS", res.data);
+    } catch (error) {
+      // toast('error', error.message)
+      console.log(error);
+    }
   };
 };
 
-export const masterFetchSuccess = (payload) => {
+export const practitionerFetchSuccess = (payload) => {
   return {
-    type: FETCH_MASTER_DATA,
+    type: FETCH_PRACTITIONERS,
     payload: payload,
   };
 };
 
 export const addMaster = (payload) => {
-  return (dispatch, getState) => {
-    return fetch(`${baseUrl}/masterData`, {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-        // access_token: localStorage.access_token,
-      },
-      body: JSON.stringify(payload),
-    })
-      .then(async (response) => {
-        if (!response.ok) {
-          const error = await response.json();
-          console.log(error);
-          throw new Error(error.message);
-        }
-        return response.json();
-      })
-      .then((data) => {
-        dispatch(masterDataFetch());
-      })
-      .catch((error) => {
-        console.error("Error:", error);
-      });
+  return async (dispatch, getState) => {
+    try {
+      const res = await api.post("/masterData", payload);
+      // toast('success', `Success Deleted Data Patient`)
+      console.log("MASUKK AD");
+      dispatch(practitionersFetch());
+    } catch (error) {
+      // toast('error', error.message)
+      console.log(error);
+    }
   };
 };
 
 export const deleteMaster = (id) => {
   return (dispatch, getState) => {
-    fetch(`${baseUrl}/masterData/${id}`, {
+    fetch(`${url}/masterData/${id}`, {
       method: "DELETE",
       // headers: {
       //   access_token: localStorage.access_token,
@@ -100,9 +98,9 @@ export const deleteMaster = (id) => {
         Swal.fire({
           title: "Deleted!",
           text: "Your file has been deleted.",
-          icon: "success"
+          icon: "success",
         });
-        dispatch(masterDataFetch());
+        dispatch(practitionersFetch());
       })
       .catch((error) => {
         console.error("Error:", error);

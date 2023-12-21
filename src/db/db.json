@@ -2,80 +2,112 @@
   "masterData": [
     {
       "id": 1,
-      "name": "Marketplace",
-      "nik": 1231293712,
-      "gender": "Laki-Laki",
-      "nilai": 30
+      "Name": "Gallant,Mario R.",
+      "Nik": "A2230",
+      "BirthDate": "R8757",
+      "Gender": "S2760",
+      "PractitionerCode": "X627",
+      "PractitionerId": "R6049",
+      "Qualification": "A3372",
+      "HospitalId": "A2021"
     },
     {
       "id": 2,
-      "name": "Venus DB PRO",
-      "nik": 3123123134,
-      "gender": "Perempuan",
-      "nilai": 30
+      "Name": "Goldman,Julie J.",
+      "Nik": "A5300",
+      "BirthDate": "B6871",
+      "Gender": "T3892",
+      "PractitionerCode": "M7127",
+      "PractitionerId": "B6269",
+      "Qualification": "K8070",
+      "HospitalId": "A2021"
+    },
+    {
+      "id": 3,
+      "Name": "Underman,Sam F.",
+      "Nik": "A6058",
+      "BirthDate": "H4001",
+      "Gender": "I4447",
+      "PractitionerCode": "F2830",
+      "PractitionerId": "A804",
+      "Qualification": "B974",
+      "HospitalId": "A2021"
+    },
+    {
+      "id": 4,
+      "Name": "Sverdlov,Alexandra H.",
+      "Nik": "B9879",
+      "BirthDate": "G9447",
+      "Gender": "P5424",
+      "PractitionerCode": "V850",
+      "PractitionerId": "X9819",
+      "Qualification": "I3285",
+      "HospitalId": "A2021"
     },
     {
       "id": 5,
-      "name": "Marketplace",
-      "nik": 3123123134,
-      "gender": "Laki-Laki",
-      "nilai": 30
+      "Name": "Russell,Sally I.",
+      "Nik": "C8429",
+      "BirthDate": "V8808",
+      "Gender": "D3759",
+      "PractitionerCode": "P9712",
+      "PractitionerId": "F2060",
+      "Qualification": "M241",
+      "HospitalId": "A2021"
     },
     {
       "id": 6,
-      "name": "Marketplace",
-      "nik": 3123123134,
-      "gender": "Laki-Laki",
-      "nilai": 30
+      "Name": "Xiang,Bill Q.",
+      "Nik": "C9378",
+      "BirthDate": "V9128",
+      "Gender": "L7748",
+      "PractitionerCode": "A5651",
+      "PractitionerId": "S3344",
+      "Qualification": "X1784",
+      "HospitalId": "A2021"
     },
     {
-      "id": 7,
-      "name": "Marketplace",
-      "nik": 3123123134,
-      "gender": "Laki-Laki",
-      "nilai": 30
+      "Name": "King,Patrick B.",
+      "Nik": "D4069",
+      "BirthDate": "L2751",
+      "Gender": "W7388",
+      "PractitionerCode": "G8755",
+      "PractitionerId": "T1498",
+      "Qualification": "Z1756",
+      "HospitalId": "A2021"
     },
     {
       "id": 8,
-      "name": "Venus DB PRO",
-      "nik": 3123123134,
-      "gender": "Perempuan",
-      "nilai": 30
+      "Name": "Zimmerman,Lydia B.",
+      "Nik": "F7393",
+      "BirthDate": "N8224",
+      "Gender": "E2474",
+      "PractitionerCode": "F6329",
+      "PractitionerId": "X204",
+      "Qualification": "R818",
+      "HospitalId": "A2021"
+    },
+    {
+      "id": 9,
+      "Name": "North,Usha U.",
+      "Nik": "G5825",
+      "BirthDate": "H128",
+      "Gender": "M2626",
+      "PractitionerCode": "U1402",
+      "PractitionerId": "U7470",
+      "Qualification": "H8738",
+      "HospitalId": "A2021"
     },
     {
       "id": 10,
-      "name": "Venus 3D Asset",
-      "nik": 3123123134,
-      "gender": "Perempuan",
-      "nilai": 50
-    },
-    {
-      "id": 11,
-      "name": "Marketplace",
-      "nik": 3123123134,
-      "gender": "Laki-Laki",
-      "nilai": 50
-    },
-    {
-      "id": 12,
-      "name": "Marketplace",
-      "nik": 3123123134,
-      "gender": "Laki-Laki",
-      "nilai": 50
-    },
-    {
-      "id": 13,
-      "name": "Marketplace",
-      "nik": 3123123134,
-      "gender": "Laki-Laki",
-      "nilai": 50
-    },
-    {
-      "name": "rhazzid",
-      "nik": "1122",
-      "gender": "Laki-Laki",
-      "nilai": "90",
-      "id": 14
+      "Name": "Ravazzolo,Nataliya H.",
+      "Nik": "G5954",
+      "BirthDate": "I6509",
+      "Gender": "Y1504",
+      "PractitionerCode": "O8264",
+      "PractitionerId": "N2462",
+      "Qualification": "M8300",
+      "HospitalId": "A2021"
     }
   ],
   "login": [

@@ -1,12 +1,23 @@
 // Custom components
-import {React, useState} from "react";
+import { React, useState } from "react";
 
 function InputField(props) {
-  const { label, id, extra, type, placeholder, variant, state, disabled, name, onDataChange } =
-    props;
+  const {
+    label,
+    id,
+    extra,
+    type,
+    placeholder,
+    variant,
+    state,
+    disabled,
+    name,
+    onDataChange,
+  } = props;
 
   const handleChange = (e) => {
-    onDataChange(e.target.value)
+    // console.log("E", e.target.name);
+    onDataChange(e.target.name, e.target.value);
   };
 
   return (
@@ -25,6 +36,7 @@ function InputField(props) {
         type={type}
         id={id}
         name={name}
+        maxLength={name == "Nik" ? "16" : "40"}
         placeholder={placeholder}
         className={`mt-2 flex h-12 w-full items-center justify-center rounded-xl border bg-white/0 p-3 text-sm outline-none ${
           disabled === true

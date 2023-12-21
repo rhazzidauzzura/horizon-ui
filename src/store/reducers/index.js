@@ -1,8 +1,10 @@
 import { combineReducers } from "redux";
-import masterReducer from "./MasterDataReducer";
+import practitionersReducer from "./Practitioner";
+import locationsReducer from "./Location";
 
 const rootReducer = combineReducers({
-  masters: masterReducer,
+  practitioners: practitionersReducer,
+  locations: locationsReducer,
 });
 
 export default rootReducer;
